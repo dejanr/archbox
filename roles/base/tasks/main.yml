@@ -1,0 +1,13 @@
+---
+- include: sudo.yml
+- include: archiving.yml
+- include: filesystems.yml
+
+- name: replace /etc/issue
+  copy: src=issue.dark dest=/etc/issue owner=root group=root
+
+- name: replace /etc/systemd/journald.conf
+  copy: src=systemd/journald.conf dest=/etc/systemd/journald.conf owner=root group=root
+
+- name: synchronize systemd services
+  copy: src=systemd/system/ dest=/etc/systemd/system/ owner=root group=root

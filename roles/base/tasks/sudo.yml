@@ -1,0 +1,7 @@
+---
+
+- name: install sudo package
+  pacman: name=sudo state=present
+
+- name: setup sudo with wheel group in sudoers
+  lineinfile: "dest=/etc/sudoers state=present regexp='^%wheel' line='%wheel ALL=(ALL) NOPASSWD: ALL'"

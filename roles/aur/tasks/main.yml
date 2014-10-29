@@ -1,0 +1,10 @@
+---
+
+- name: install python2-httplib2
+  pacman: name=python2-httplib2 state=present
+
+- name: install package-query
+  include: ../../aur.yml pkg_name=package-query
+
+- name: install pacaur
+  include: ../../aur.yml pkg_name=pacaur

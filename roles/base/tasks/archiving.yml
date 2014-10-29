@@ -1,0 +1,7 @@
+---
+
+- name: install unrar
+  pacman: name=unrar state=present
+
+- name: install unzip
+  pacman: name=unzip state=present

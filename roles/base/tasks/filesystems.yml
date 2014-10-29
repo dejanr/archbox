@@ -1,0 +1,4 @@
+---
+
+- name: install exfat
+  include: ../../aur.yml pkg_name=exfat-git
