@@ -1,0 +1,13 @@
+---
+
+- name: install acpi
+  pacman: name=acpi state=present
+
+- name: install acpid
+  pacman: name=acpid state=present
+
+- name: enable acpid
+  command: systemctl enable acpid
+
+- name: start acpid
+  command: systemctl start acpid

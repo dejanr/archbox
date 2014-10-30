@@ -1,0 +1,16 @@
+---
+
+- name: install pulseaudio
+  pacman: name=pulseaudio state=present
+
+- name: install pulseaudio-alsa
+  pacman: name=pulseaudio-alsa state=present
+
+- name: install alsa-utils
+  pacman: name=alsa-utils state=present
+
+- name: alsa base config
+  lineinfile: dest=/etc/modprobe.d/alsa-base.conf state=present regexp='^options' line='options snd-hda-intel power_save=1 model=mbp101' create=yes
+
+- name: set master unmute
+  command: amixer sset Master unmute

@@ -5,7 +5,7 @@
   uri: >
     url=https://aur.archlinux.org/rpc.php?type=info&arg={{ pkg_name | mandatory }}
     return_content=yes
-    timeout=6
+    timeout=120
   register: api_info
 
 - assert:

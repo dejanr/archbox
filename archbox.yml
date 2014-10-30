@@ -4,3 +4,5 @@
   roles:
     - aur
     - base
+    - acpi
+    - audio
