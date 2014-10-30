@@ -1,0 +1,22 @@
+---
+
+- name: install openssh
+  pacman: name=openssh state=present
+
+- name: install sshfs
+  pacman: name=sshfs state=present
+
+- name: install mosh
+  pacman: name=mosh state=present
+
+- name: install monkeysphere
+  include: ../../aur.yml pkg_name=monkeysphere
+
+- name: install envoy
+  include: ../../aur.yml pkg_name=envoy-git
+
+- name: enable envoy
+  command: systemctl enable envoy@ssh-agent.socket
+
+- name: start envoy
+  command: systemctl start envoy@ssh-agent.socket

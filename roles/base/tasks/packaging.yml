@@ -1,0 +1,7 @@
+---
+
+- name: install abs
+  pacman: name=abs state=present
+
+- name: install pkgfile
+  pacman: name=pkgfile state=present

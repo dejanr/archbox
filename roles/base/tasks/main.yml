@@ -2,6 +2,11 @@
 - include: sudo.yml
 - include: archiving.yml
 - include: filesystems.yml
+- include: building.yml
+- include: packaging.yml
+- include: idevice.yml
+- include: scm.yml
+- include: ssh.yml
 
 - name: replace /etc/issue
   copy: src=issue.dark dest=/etc/issue owner=root group=root

@@ -1,0 +1,13 @@
+---
+
+- name: install libimobiledevice
+  pacman: name=libimobiledevice state=present
+
+- name: install ifuse
+  pacman: name=ifuse state=present
+
+- name: install usbmuxd
+  pacman: name=usbmuxd state=present
+
+- name: install usbmuxd
+  modprobe: name=ipheth state=present

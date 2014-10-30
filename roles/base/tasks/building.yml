@@ -1,0 +1,10 @@
+---
+
+- name: install autoconf
+  pacman: name=autoconf state=present
+
+- name: install automake
+  pacman: name=automake state=present
+
+- name: install cmake
+  pacman: name=cmake state=present
