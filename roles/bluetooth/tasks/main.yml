@@ -1,0 +1,13 @@
+---
+
+- name: install bluez
+  pacman: name=bluez state=present
+
+- name: install bluez-utils
+  pacman: name=bluez-utils state=present
+
+- name: enable bluetooth
+  command: systemctl enable bluetooth
+
+- name: start bluetooth
+  command: systemctl start bluetooth
