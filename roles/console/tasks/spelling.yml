@@ -1,0 +1,10 @@
+---
+
+- name: install aspell
+  pacman: name=aspell state=present
+
+- name: install aspell-sv
+  include: ../../aur.yml pkg_name=aspell-sv
+
+- name: install translate-shell-git
+  include: ../../aur.yml pkg_name=translate-shell-git

@@ -1,2 +1,6 @@
 ---
 - include: caps2ctrl.yml
+- include: monitoring.yml
+- include: tmux.yml
+- include: passwords.yml
+- include: spelling.yml
