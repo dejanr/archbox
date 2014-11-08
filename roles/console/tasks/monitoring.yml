@@ -1,0 +1,13 @@
+---
+
+- name: install htop
+  pacman: name=htop state=present
+
+- name: install iftop
+  pacman: name=iftop state=present
+
+- name: install iotop
+  pacman: name=iotop state=present
+
+- name: install ncdu
+  pacman: name=ncdu state=present
