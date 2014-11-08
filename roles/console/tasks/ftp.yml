@@ -1,0 +1,4 @@
+---
+
+- name: install lftp
+  pacman: name=lftp state=present
