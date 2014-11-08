@@ -1,0 +1,8 @@
+---
+- include: vagrant.yml
+
+- name: install python2-pygments
+  pacman: name=python2-pygments state=present
+
+- name: install ctags
+  pacman: name=ctags state=present

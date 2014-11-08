@@ -1,0 +1,10 @@
+---
+
+- name: install virutalbox
+  pacman: name=virtualbox state=present
+
+- name: install virtualbox-host-dkms
+  pacman: name=virtualbox-host-dkms state=present
+
+- name: install vagrant
+  pacman: name=vagrant state=present
