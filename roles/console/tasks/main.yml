@@ -5,3 +5,4 @@
 - include: passwords.yml
 - include: spelling.yml
 - include: ftp.yml
+- include: irc.yml

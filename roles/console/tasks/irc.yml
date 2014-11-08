@@ -1,0 +1,4 @@
+---
+
+- name: install weechat
+  pacman: name=weechat state=present
