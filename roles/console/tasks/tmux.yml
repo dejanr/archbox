@@ -1,0 +1,10 @@
+---
+
+- name: install tmux
+  pacman: name=tmux state=present
+
+- name: install tmate
+  include: ../../aur.yml pkg_name=tmate
+
+- name: install wemux-git
+  include: ../../aur.yml pkg_name=wemux-git
