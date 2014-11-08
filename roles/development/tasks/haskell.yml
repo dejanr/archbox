@@ -1,0 +1,7 @@
+---
+
+- name: install ghc
+  pacman: name=ghc state=present
+
+- name: install cabal-install
+  pacman: name=cabal-install state=present
