@@ -1,0 +1,7 @@
+---
+
+- name: install ruby
+  pacman: name=ruby state=present
+
+- name: install ruby-install-git
+  nclude: ../../aur.yml pkg_name=ruby-install-git

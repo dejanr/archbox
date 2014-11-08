@@ -1,4 +1,5 @@
 ---
+- include: ruby.yml
 - include: vagrant.yml
 
 - name: install python2-pygments
