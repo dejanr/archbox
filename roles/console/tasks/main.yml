@@ -6,3 +6,46 @@
 - include: spelling.yml
 - include: ftp.yml
 - include: irc.yml
+
+
+- name: install reptyr
+  pacman: name=reptyr state=present
+
+- name: install ranger
+  pacman: name=ranger state=present
+
+- name: install vimpager
+  pacman: name=vimpager state=present
+
+- name: install antiword
+  pacman: name=antiword state=present
+
+- name: install unrtf
+  pacman: name=unrtf state=present
+
+- name: install cdrkit
+  pacman: name=cdrkit state=present
+
+- name: install cmatrix
+  pacman: name=cmatrix state=present
+
+- name: install silver-searcher-git
+  include: ../../aur.yml pkg_name=silver-searcher-git
+
+- name: install ngp
+  include: ../../aur.yml pkg_name=ngp
+
+- name: install mange
+  include: ../../aur.yml pkg_name=mange
+
+- name: install ctodo
+  include: ../../aur.yml pkg_name=ctodo
+
+- name: install jrnl
+  include: ../../aur.yml pkg_name=jrnl
+
+- name: install mpg123
+  pacman: name=mpg123 state=present
+
+- name: install termit
+  gem: name=termit state=present user_install=yes
