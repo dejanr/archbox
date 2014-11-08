@@ -1,0 +1,10 @@
+---
+
+- name: create /usr/share/keymaps
+  file: path=/usr/share/keymaps state=directory owner=root group=root
+
+- name: copy us_caps2ctrl keymaps
+  copy: src=us_caps2ctrl.map.gz dest=/usr/share/keymaps/us_caps2ctrl.map.gz owner=root group=root
+
+- name: update vconsole with KEYMAP
+  copy: src=vconsole.conf dest=/etc/vconsole.conf owner=root group=root
