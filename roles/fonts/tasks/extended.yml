@@ -1,0 +1,10 @@
+---
+
+- name: install ttf-freefont
+  pacman: name=ttf-linux-libertine state=present
+
+- name: install ttf-symbola
+  pacman: name=ttf-symbola state=present
+
+- name: install wqy-zenhei
+  pacman: name=wqy-zenhei state=present

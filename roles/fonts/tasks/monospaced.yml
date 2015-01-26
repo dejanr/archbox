@@ -1,0 +1,7 @@
+---
+
+- name: install adobe-source-code-pro-fonts
+  pacman: name=adobe-source-code-pro-fonts state=present
+
+- name: install ttf-input
+  include: ../../aur.yml pkg_name=ttf-input

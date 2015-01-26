@@ -1,0 +1,12 @@
+---
+- include: base.yml
+- include: extended.yml
+- include: monospaced.yml
+
+- name: install freetype2
+  pacman: name=freetype2 state=present
+
+- name: install fontconfig
+  pacman: name=fontconfig state=present
+
+# infctl setstyle osx2

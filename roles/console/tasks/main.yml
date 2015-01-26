@@ -41,9 +41,6 @@
 - name: install ctodo
   include: ../../aur.yml pkg_name=ctodo
 
-- name: install jrnl
-  include: ../../aur.yml pkg_name=jrnl
-
 - name: install mpg123
   pacman: name=mpg123 state=present
 

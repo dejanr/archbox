@@ -1,0 +1,22 @@
+---
+
+- name: install ttf-dejavu
+  pacman: name=ttf-dejavu state=present
+
+- name: install ttf-liberation
+  pacman: name=ttf-liberation state=present
+
+- name: install ttf-droid
+  pacman: name=ttf-droid state=present
+
+- name: install ttf-ubuntu-font-family
+  pacman: name=ttf-ubuntu-font-family state=present
+
+- name: install ttf-opensans
+  include: ../../aur.yml pkg_name=ttf-opensans
+
+- name: install ttf-mac-fonts
+  include: ../../aur.yml pkg_name=ttf-mac-fonts
+
+- name: install ttf-roboto
+  include: ../../aur.yml pkg_name=ttf-roboto
